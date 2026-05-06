@@ -4,7 +4,7 @@
 class Special < Formula
   desc "Repo-native semantic spec tool"
   homepage "https://github.com/sourcerodeo/special"
-  version "0.9.0"
+  version "0.9.1"
 
   archive = on_system_conditional(
     macos: on_arch_conditional(
@@ -16,15 +16,15 @@ class Special < Formula
       intel: "special-cli-x86_64-unknown-linux-gnu.tar.xz",
     ),
   )
-  url "https://github.com/sourcerodeo/special/releases/download/v0.9.0/#{archive}"
+  url "https://github.com/sourcerodeo/special/releases/download/v0.9.1/#{archive}"
   sha256 on_system_conditional(
     macos: on_arch_conditional(
-      arm: "4bd76b98e0276d9d8d76fc913d24aafb4d0b547ec7d4cd26cb440a8680ad5e8d",
-      intel: "20eb8096d0256b72821c64775610dec211ee578fe8cdf0bcb7c541b74f3c77ab",
+      arm: "a5d67f44d2476e9702485dcf9eea9d38bec06984965438372e35db782c954acb",
+      intel: "7cab660e0289a8ff80820d2ce9a6aa3f4f5940827f35f18591d5505cb7ed70c7",
     ),
     linux: on_arch_conditional(
-      arm: "11a4f48c19dfd258f06fdaaa619d9d749518ea35763c2abf07a348547dc271d4",
-      intel: "2dad33ffb2e519c5820ea29eb8180d482ff8285e5bba760376a43150ba53dde4",
+      arm: "841e56134cec1ec0ae6776d01179c59d79d070169c27ef5fd03f231e5a3b8f46",
+      intel: "b09b2469f0148e36557c74e7470f184e6d87ac57fb81e815324167b8dbc8b244",
     ),
   )
 
